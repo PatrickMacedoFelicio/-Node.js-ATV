@@ -1,25 +1,16 @@
 {
   "name": "-node.js-atv",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "dev:express": "nodemon app.js",
+    "dev:fastify": "nodemon src/server.fastify.js",
+    "start:express": "node app.js",
+    "start:fastify": "node src/server.fastify.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PatrickMacedoFelicio/-Node.js-ATV.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/PatrickMacedoFelicio/-Node.js-ATV/issues"
-  },
-  "homepage": "https://github.com/PatrickMacedoFelicio/-Node.js-ATV#readme",
   "dependencies": {
-    "-": "^0.0.1",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "fastify": "^5.6.2",
@@ -28,12 +19,5 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.11"
-  },
-    " type ": " module ",
-    " scripts ": {
-      "dev: express ": " nodemon src /app. express .js",
-      "dev: fastify ": " nodemon src / server . fastify .js",
-      " start : express ": " node src /app. express .js",
-      " start : fastify ": " node src / server . fastify .js"
-    }
+  }
 }
