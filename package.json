@@ -1,6 +1,7 @@
 {
-  "name": "-node.js-atv",
+  "name": "nodejs-atv",
   "version": "1.0.0",
+  "description": "Atividade Node.js com Express e Fastify",
   "main": "index.js",
   "type": "module",
   "scripts": {
