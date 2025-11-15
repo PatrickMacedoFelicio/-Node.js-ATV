@@ -70,27 +70,3 @@ curl.exe http://localhost:3000/hello
   "message": "API REST com Node.js funcionando!"
 }
 ```
-
-------------------------------------------------------------------------
-
-## 🧠 Sobre o Princípio de Statelessness
-
-Cada chamada ao endpoint retorna sempre a mesma resposta porque o
-servidor **não armazena estado entre requisições**.\
-Isso significa que cada request é independente e contém tudo o que o
-servidor precisa para responder --- comportamento essencial em APIs REST
-modernas.
-
-------------------------------------------------------------------------
-
-## 📜 Licença
-
-Este projeto é apenas para fins educacionais --- uso livre.
-
-------------------------------------------------------------------------
-
-## 👤 Autor
-
-**Seu Nome**\
-📧 E-mail opcional\
-📎 GitHub: https://github.com/SEU-USUARIO
