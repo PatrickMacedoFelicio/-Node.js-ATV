@@ -1,11 +1,13 @@
 import express from "express";
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 3000;
 
-// Rota principal solicitada
+// endpoint solicitado
 app.get("/hello", (req, res) => {
-  res.json({ message: "API REST com Node.js funcionando!" });
+  res.json({
+    message: "API REST com Node.js funcionando!"
+  });
 });
 
 app.listen(port, () => {

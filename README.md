@@ -1,109 +1,130 @@
-# **📌 Projeto Node.js – API REST com Express**
+# 🚀 API REST com Node.js (Express)
 
-Este projeto foi desenvolvido como parte da disciplina **Programação Back-End Avançada**, com foco em estudar:
+Este projeto é uma atividade prática da disciplina **Programação
+Back-End Avançada**, com o objetivo de criar uma API simples utilizando
+o framework **Express** e aplicar princípios fundamentais da arquitetura
+REST, como *statelessness*, uso de JSON e rotas bem definidas.
 
-- Princípios da arquitetura REST  
-- Node.js (event loop, I/O não bloqueante, assíncrono)  
-- Criação de APIs com **Express**
+------------------------------------------------------------------------
 
-O projeto contém **duas implementações de servidor** usando Express:
+## 📌 Funcionalidades
 
-✔️ **app.js** — servidor principal da atividade  
-✔️ **server.js** — servidor simples com a rota `/hello`
+-   Endpoint `GET /hello` retornando uma mensagem em JSON\
+-   Servidor Express com middleware de JSON\
+-   Respostas independentes (princípio de *statelessness*)\
+-   Script de desenvolvimento com **nodemon**
 
----
+------------------------------------------------------------------------
 
-## 🚀 **Tecnologias utilizadas**
+## 📁 Estrutura do Projeto
 
-- Node.js
-- Express 5
-- Nodemon
-- Dotenv
+    /
+    ├── src/
+    │   └── server.js
+    ├── .env
+    ├── package.json
+    └── README.md
 
----
+------------------------------------------------------------------------
 
-## 📂 **Estrutura do Projeto**
+## 🛠️ Tecnologias Utilizadas
 
+-   **Node.js**
+-   **Express**
+-   **dotenv**
+-   **Nodemon** (ambiente de desenvolvimento)
+
+------------------------------------------------------------------------
+
+## ▶️ Como executar o projeto
+
+### 1️⃣ **Clone o repositório**
+
+``` bash
+git clone https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git
 ```
--Node.js-ATV/
-│── node_modules/
-│── .env
-│── app.js
-│── server.js
-│── package.json
-│── README.md
+
+### 2️⃣ **Acesse o diretório**
+
+``` bash
+cd SEU-REPOSITORIO
 ```
 
----
+### 3️⃣ **Instale as dependências**
 
-## ⚙️ **Instalação**
-
-Instale todas as dependências:
-
-```sh
+``` bash
 npm install
 ```
 
-(Se quiser usar variáveis de ambiente, configure o arquivo `.env`.)
+### 4️⃣ **Configure as variáveis de ambiente**
 
----
+Crie um arquivo `.env` na raiz:
 
-## ▶️ **Como executar o projeto**
+``` env
+PORT=3000
+NODE_ENV=development
+```
 
-### 🔵 Rodar servidor Express (app.js) com nodemon
-```sh
+------------------------------------------------------------------------
+
+## 🚀 Executando o servidor
+
+### ▶️ **Modo desenvolvimento (com nodemon)**
+
+``` bash
 npm run dev:express
 ```
 
-### 🔵 Rodar servidor Express (app.js) normalmente
-```sh
+### ▶️ **Modo produção**
+
+``` bash
 npm run start:express
 ```
 
-### 🟣 Rodar o server.js manualmente
-```sh
-node server.js
+O servidor iniciará em:
+
+    http://localhost:3000
+
+------------------------------------------------------------------------
+
+## 🌐 Endpoint disponível
+
+### **GET /hello**
+
+📥 Requisição:
+
+``` bash
+curl http://localhost:3000/hello
 ```
 
----
+📤 Resposta:
 
-## 🌐 **Rotas Disponíveis**
-
-### ✔️ server.js
-```
-GET /hello
-```
-
-Retorno esperado:
-```json
+``` json
 {
   "message": "API REST com Node.js funcionando!"
 }
 ```
 
-### ✔️ app.js
-As rotas podem variar dependendo de como você configurou o arquivo.  
-Se quiser, posso documentar todas — basta enviar o conteúdo atualizado.
+------------------------------------------------------------------------
 
----
+## 🧠 Sobre o Princípio de Statelessness
 
-## 🧪 **Testando a API**
+Cada chamada ao endpoint retorna sempre a mesma resposta porque o
+servidor **não armazena estado entre requisições**.\
+Isso significa que cada request é independente e contém tudo o que o
+servidor precisa para responder --- comportamento essencial em APIs REST
+modernas.
 
-Exemplo usando curl:
+------------------------------------------------------------------------
 
-```sh
-curl http://localhost:3000/hello
-```
+## 📜 Licença
 
----
+Este projeto é apenas para fins educacionais --- uso livre.
 
-## 📘 **Objetivo da Atividade**
+------------------------------------------------------------------------
 
-- Demonstrar compreensão da arquitetura REST  
-- Implementar servidor com Express  
-- Criar rotas REST básicas  
-- Entender o fluxo assíncrono do Node.js
+## 👤 Autor
 
----
-
-Se quiser deixar o README mais bonito, adicionar badges, gifs, ou documentação extra, posso fazer também! 🚀
+**Seu Nome**\
+📧 E-mail opcional\
+📎 GitHub: https://github.com/SEU-USUARIO
