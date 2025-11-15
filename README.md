@@ -16,40 +16,6 @@ REST, como *statelessness*, uso de JSON e rotas bem definidas.
 
 ------------------------------------------------------------------------
 
-## 📁 Estrutura do Projeto
-
-    /
-    ├── src/
-    │   └── server.js
-    ├── .env
-    ├── package.json
-    └── README.md
-
-------------------------------------------------------------------------
-
-## 🛠️ Tecnologias Utilizadas
-
--   **Node.js**
--   **Express**
--   **dotenv**
--   **Nodemon** (ambiente de desenvolvimento)
-
-------------------------------------------------------------------------
-
-## ▶️ Como executar o projeto
-
-### 1️⃣ **Clone o repositório**
-
-``` bash
-git clone https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git
-```
-
-### 2️⃣ **Acesse o diretório**
-
-``` bash
-cd SEU-REPOSITORIO
-```
-
 ### 3️⃣ **Instale as dependências**
 
 ``` bash
@@ -94,7 +60,7 @@ O servidor iniciará em:
 📥 Requisição:
 
 ``` bash
-curl http://localhost:3000/hello
+curl.exe http://localhost:3000/hello
 ```
 
 📤 Resposta:
